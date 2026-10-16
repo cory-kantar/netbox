@@ -130,6 +130,8 @@ NetBox looks for the `config` variable within a plugin's `__init__.py` to load i
 
 All required settings must be configured by the user. If a configuration parameter is listed in both `required_settings` and `default_settings`, the default setting will be ignored.
 
+See [User Preferences](./user-interface.md#user-preferences) for details on defining `user_preferences`.
+
 !!! tip "Accessing Config Parameters"
     Plugin configuration parameters can be accessed using the `get_plugin_config()` function. For example:
     

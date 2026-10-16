@@ -138,7 +138,7 @@ query {
 
 ## GraphQL Objects
 
-NetBox provides two object type classes for use by plugins.
+NetBox provides the following object type classes for use by plugins.
 
 ::: netbox.graphql.types.BaseObjectType
     options:
@@ -147,6 +147,14 @@ NetBox provides two object type classes for use by plugins.
 ::: netbox.graphql.types.NetBoxObjectType
     options:
       members: false
+
+Additionally, the following object type classes are available for subclasses of standard base models.
+
+| Model Class           | Object Type Class                                  |
+|-----------------------|----------------------------------------------------|
+| `PrimaryModel`        | `netbox.graphql.types.PrimaryObjectType`           |
+| `OrganizationalModel` | `netbox.graphql.types.OrganizationalObjectType`    |
+| `NestedGroupModel`    | `netbox.graphql.types.NestedGroupObjectType`       |
 
 ## GraphQL Filters
 

@@ -15,7 +15,8 @@ Widgets which require configuration by a user must also include a `ConfigForm` c
 To register a dashboard widget for use in NetBox, import the `register_widget()` decorator and use it to wrap each `DashboardWidget` subclass:
 
 ```python
-from extras.dashboard.widgets import DashboardWidget, register_widget
+from extras.dashboard.utils import register_widget
+from extras.dashboard.widgets import DashboardWidget
 
 @register_widget
 class MyWidget1(DashboardWidget):
